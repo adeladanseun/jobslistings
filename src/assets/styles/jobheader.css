@@ -1,0 +1,24 @@
+.jobHeader {
+    background-color: rgb(255, 255, 255);
+    transform: translateY(-50px);
+    box-shadow: 0 10px 24px -10px black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 20px;
+    width: 100%;
+}
+.filterWrapper {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-left: 15px;
+}
+.clearFilter {
+    margin-left: auto;
+    border: 0;
+    background-color: inherit;
+    color: rgb(90, 158, 160);
+    cursor: pointer;
+}

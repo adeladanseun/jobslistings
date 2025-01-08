@@ -1,0 +1,22 @@
+.mainWrapper {
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.topWrapper {
+    height: 95px;
+    
+    background: url('../bg-header-mobile.svg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: rgb(112, 217, 231);
+   /*  background-position: center; */
+}
+.jobsWrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(113, 255, 255);
+}

@@ -1,0 +1,11 @@
+.filterTag {
+    color: rgb(0, 153, 153);
+    background-color: rgba(0, 0, 0, 0.075);
+    font-size: 12px;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.filterTag:hover {
+    opacity: 0.8;
+}

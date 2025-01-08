@@ -1,0 +1,17 @@
+.usedFilterTag {
+    font-size: 13px;
+    background-color: rgba(0, 0, 0, 0.048);
+    padding-left: 8px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    color: rgb(90, 158, 160);
+    column-gap: 10px
+}
+.usedFilterTag img {
+    padding: 8px;
+    background-color: rgb(110, 181, 190);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    cursor: pointer;
+}
