@@ -45,7 +45,7 @@ export const JobLoaderFunction = async () => {
         throw Error('Unable to fetch data')
     }
     const res = await response.json()
-    return res
+    return res.jobs
 }
 
 export const errElement = () => {
