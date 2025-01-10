@@ -4,7 +4,6 @@ import '../assets/styles/joblayout.css'
 import { useLoaderData, useRouteError } from 'react-router-dom'
 import JobHeader from './JobHeader'
 import Job from './Job'
-import api from '../components/Api'
 const JobWrapper = async () => {
 
     let jobs = await fetch(api)//useLoaderData()
