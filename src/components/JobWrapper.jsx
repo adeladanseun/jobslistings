@@ -4,9 +4,10 @@ import '../assets/styles/joblayout.css'
 import { useLoaderData, useRouteError } from 'react-router-dom'
 import JobHeader from './JobHeader'
 import Job from './Job'
+import api from '../components/Api'
 const JobWrapper = async () => {
 
-    let jobs = await fetch('https://adeladanseun.github.io/jobslistings/data.json')//useLoaderData()
+    let jobs = await fetch(api)//useLoaderData()
     jobs = jobs.json()
     const [filters, setFilters] = useState([])
 
