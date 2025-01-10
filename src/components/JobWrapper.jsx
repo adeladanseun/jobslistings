@@ -6,8 +6,7 @@ import JobHeader from './JobHeader'
 import Job from './Job'
 const JobWrapper = async () => {
 
-    let jobs = await fetch(api)//useLoaderData()
-    jobs = jobs.json()
+    let jobs = useLoaderData()
     const [filters, setFilters] = useState([])
 
     const addToFilter = (value) => {
@@ -41,7 +40,7 @@ const JobWrapper = async () => {
 export default JobWrapper
 
 export const JobLoaderFunction = async () => {
-    const response = await fetch(api + '/jobs')
+    const response = await fetch(api)
     if (!response.ok) {
         throw Error('Unable to fetch data')
     }
