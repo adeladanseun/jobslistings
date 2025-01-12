@@ -4,7 +4,7 @@ import '../assets/styles/joblayout.css'
 import { useLoaderData, useRouteError } from 'react-router-dom'
 import JobHeader from './JobHeader'
 import Job from './Job'
-const JobWrapper = async () => {
+const JobWrapper = () => {
 
     let jobs = useLoaderData()
     const [filters, setFilters] = useState([])
@@ -45,7 +45,10 @@ export const JobLoaderFunction = async () => {
         throw Error('Unable to fetch data')
     }
     const res = await response.json()
-    return res.jobs
+    const newres = res.jobs
+    console.log('fetching data')
+    console.log(newres)
+    return newres
 }
 
 export const errElement = () => {
